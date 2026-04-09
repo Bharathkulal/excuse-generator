@@ -1,0 +1,54 @@
+body {
+    margin: 0;
+    font-family: Arial;
+    background: linear-gradient(270deg, #667eea, #764ba2, #ff758c);
+    background-size: 600% 600%;
+    animation: bg 10s ease infinite;
+    color: white;
+    text-align: center;
+}
+
+@keyframes bg {
+    0% { background-position: 0% }
+    50% { background-position: 100% }
+    100% { background-position: 0% }
+}
+
+.container {
+    margin-top: 80px;
+    padding: 20px;
+}
+
+h1 {
+    font-size: 40px;
+}
+
+.buttons {
+    margin-top: 20px;
+}
+
+.buttons button {
+    margin: 8px;
+    padding: 12px 18px;
+    border: none;
+    border-radius: 10px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+button:hover {
+    transform: scale(1.2);
+}
+
+#output {
+    margin-top: 40px;
+    font-size: 24px;
+    padding: 20px;
+    animation: fadeIn 0.5s;
+}
+
+@keyframes fadeIn {
+    from {opacity: 0;}
+    to {opacity: 1;}
+}
